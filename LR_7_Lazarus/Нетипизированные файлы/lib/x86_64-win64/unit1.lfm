@@ -1,0 +1,59 @@
+object fMain: TfMain
+  Left = 693
+  Height = 256
+  Top = 203
+  Width = 388
+  BorderStyle = bsDialog
+  Caption = 'Копирование файла'
+  ClientHeight = 256
+  ClientWidth = 388
+  DesignTimePPI = 120
+  Position = poDesktopCenter
+  LCLVersion = '4.6.0.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 20
+    Top = 15
+    Width = 313
+    Caption = 'Выберите файл, который нужно копировать:'
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 20
+    Top = 104
+    Width = 278
+    Caption = 'Выберите папку, куда копировать файл:'
+  end
+  object DE: TDirectoryEdit
+    Left = 16
+    Height = 28
+    Top = 136
+    Width = 361
+    ShowHidden = False
+    ButtonWidth = 29
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 0
+  end
+  object FNE: TFileNameEdit
+    Left = 16
+    Height = 28
+    Top = 48
+    Width = 361
+    FilterIndex = 0
+    HideDirectories = False
+    ButtonWidth = 29
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Left = 80
+    Height = 38
+    Top = 192
+    Width = 216
+    Caption = 'Выполнить копирование'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+end

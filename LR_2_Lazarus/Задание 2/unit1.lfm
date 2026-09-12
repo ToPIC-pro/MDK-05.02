@@ -1,0 +1,76 @@
+object Form1: TForm1
+  Left = 747
+  Height = 400
+  Top = 160
+  Width = 622
+  Caption = 'Form1'
+  ClientHeight = 400
+  ClientWidth = 622
+  DesignTimePPI = 120
+  LCLVersion = '4.6.0.0'
+  OnCreate = FormCreate
+  object Label1: TLabel
+    Left = 48
+    Height = 20
+    Top = 24
+    Width = 213
+    Caption = 'Введите площадь (S) квадрата:'
+  end
+  object Edit1: TEdit
+    Left = 272
+    Height = 28
+    Top = 24
+    Width = 144
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 48
+    Height = 20
+    Top = 88
+    Width = 168
+    Caption = 'Сторона квадрата (a) := '
+  end
+  object Label3: TLabel
+    Left = 49
+    Height = 20
+    Top = 133
+    Width = 185
+    Caption = 'Диагональ квадрата (d) := '
+  end
+  object Label4: TLabel
+    Left = 48
+    Height = 20
+    Top = 183
+    Width = 244
+    Caption = 'Площадь описанного круга (S1) := '
+  end
+  object Button1: TButton
+    Left = 56
+    Height = 58
+    Top = 240
+    Width = 202
+    Caption = 'Вычислить'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 336
+    Height = 58
+    Top = 240
+    Width = 202
+    Caption = 'Очистить'
+    TabOrder = 2
+    OnClick = Button2Click
+  end
+  object BitBtn1: TBitBtn
+    Left = 440
+    Height = 37
+    Top = 336
+    Width = 148
+    Caption = 'Выход'
+    Kind = bkAbort
+    ModalResult = 3
+    TabOrder = 3
+    OnClick = BitBtn1Click
+  end
+end

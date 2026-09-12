@@ -1,0 +1,230 @@
+object Calculator: TCalculator
+  Left = 981
+  Height = 482
+  Top = 189
+  Width = 412
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Calculator'
+  ClientHeight = 482
+  ClientWidth = 412
+  Color = 8388863
+  DesignTimePPI = 120
+  LCLVersion = '4.6.0.0'
+  OnCreate = FormCreate
+  object TBack: TButton
+    Left = 16
+    Height = 66
+    Top = 77
+    Width = 142
+    Caption = '<-'
+    TabOrder = 0
+    OnClick = TBackClick
+  end
+  object TClear: TButton
+    Left = 254
+    Height = 66
+    Top = 77
+    Width = 64
+    Caption = 'c'
+    TabOrder = 2
+    OnClick = TClearClick
+  end
+  object TClearEntry: TButton
+    Left = 174
+    Height = 66
+    Top = 77
+    Width = 64
+    Caption = 'ce'
+    TabOrder = 1
+    OnClick = TClearEntryClick
+  end
+  object TSquareRoot: TButton
+    Left = 334
+    Height = 66
+    Top = 77
+    Width = 64
+    Caption = '√'
+    TabOrder = 3
+    OnClick = TSquareRootClick
+  end
+  object TEight: TButton
+    Left = 94
+    Height = 66
+    Top = 157
+    Width = 64
+    Caption = '8'
+    TabOrder = 5
+    OnClick = TEightClick
+  end
+  object TSeven: TButton
+    Left = 16
+    Height = 66
+    Top = 157
+    Width = 64
+    Caption = '7'
+    TabOrder = 4
+    OnClick = TSevenClick
+  end
+  object TNine: TButton
+    Left = 174
+    Height = 66
+    Top = 157
+    Width = 64
+    Caption = '9'
+    TabOrder = 6
+    OnClick = TNineClick
+  end
+  object TDivision: TButton
+    Left = 254
+    Height = 66
+    Top = 157
+    Width = 64
+    Caption = '/'
+    TabOrder = 7
+    OnClick = TDivisionClick
+  end
+  object TSquare: TButton
+    Left = 334
+    Height = 66
+    Top = 157
+    Width = 64
+    Caption = 'x^2'
+    TabOrder = 8
+    OnClick = TSquareClick
+  end
+  object TFive: TButton
+    Left = 94
+    Height = 66
+    Top = 237
+    Width = 64
+    Caption = '5'
+    TabOrder = 10
+    OnClick = TFiveClick
+  end
+  object TFour: TButton
+    Left = 16
+    Height = 66
+    Top = 237
+    Width = 64
+    Caption = '4'
+    TabOrder = 9
+    OnClick = TFourClick
+  end
+  object TSix: TButton
+    Left = 174
+    Height = 66
+    Top = 237
+    Width = 64
+    Caption = '6'
+    TabOrder = 11
+    OnClick = TSixClick
+  end
+  object TMultiplication: TButton
+    Left = 254
+    Height = 66
+    Top = 237
+    Width = 64
+    Caption = '*'
+    TabOrder = 12
+    OnClick = TMultiplicationClick
+  end
+  object TReciprocal: TButton
+    Left = 334
+    Height = 66
+    Top = 237
+    Width = 64
+    Caption = '1/x'
+    TabOrder = 13
+    OnClick = TReciprocalClick
+  end
+  object TTwo: TButton
+    Left = 94
+    Height = 66
+    Top = 317
+    Width = 64
+    Caption = '2'
+    TabOrder = 15
+    OnClick = TTwoClick
+  end
+  object TOne: TButton
+    Left = 16
+    Height = 66
+    Top = 317
+    Width = 64
+    Caption = '1'
+    TabOrder = 14
+    OnClick = TOneClick
+  end
+  object TThree: TButton
+    Left = 174
+    Height = 66
+    Top = 317
+    Width = 64
+    Caption = '3'
+    TabOrder = 16
+    OnClick = TThreeClick
+  end
+  object TMinus: TButton
+    Left = 254
+    Height = 66
+    Top = 317
+    Width = 64
+    Caption = '-'
+    TabOrder = 17
+    OnClick = TMinusClick
+  end
+  object TZero: TButton
+    Left = 16
+    Height = 66
+    Top = 397
+    Width = 142
+    Caption = '0'
+    TabOrder = 18
+    OnClick = TZeroClick
+  end
+  object TPlus: TButton
+    Left = 254
+    Height = 66
+    Top = 397
+    Width = 64
+    Caption = '+'
+    TabOrder = 20
+    OnClick = TPlusClick
+  end
+  object TComma: TButton
+    Left = 174
+    Height = 66
+    Top = 397
+    Width = 64
+    Caption = ','
+    TabOrder = 19
+    OnClick = TCommaClick
+  end
+  object TResult: TButton
+    Left = 334
+    Height = 144
+    Top = 319
+    Width = 64
+    Caption = '='
+    TabOrder = 21
+    OnClick = TResultClick
+  end
+  object TDisplay: TEdit
+    Left = 16
+    Height = 51
+    Top = 16
+    Width = 380
+    Alignment = taRightJustify
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -27
+    Font.Name = 'Shonen (Namikus)'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentBidiMode = False
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 22
+  end
+end
